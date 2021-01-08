@@ -16,6 +16,26 @@ for(int i=0;i<n-1;i++) {
 	
 }
 }
+static void bubble_optimital(int array[]) {
+	boolean a=false;
+	int n=array.length;
+	int temp;
+	for(int i=0;i<n-1;i++) {
+		for(int j=0;j<n-i-1;j++) {
+			if(array[j]>array[j+1]) {
+				temp=array[j];
+				array[j]=array[j+1];
+				array[j+1]=temp;
+				a=true;
+			}
+			temp=0;
+			if(a==false)
+				break;
+		}
+		
+	}
+}
+
 public static void main(String args[]) {
   
   Scanner sc=new Scanner(System.in);
@@ -27,6 +47,7 @@ public static void main(String args[]) {
 	  arr[k]=sc.nextInt();
   }
   bubble(arr);
+ // bubble_optimital(arr);
   for(int i:arr) {
 	  System.out.print(i);
   }
