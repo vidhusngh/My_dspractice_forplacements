@@ -1,4 +1,6 @@
 import java.util.Scanner;
+// MERGE FUNCTION OF MERGE SORT
+//GIVEN 2 ARRAY WHICH ARE SORTED WE HAVE TO PRINT BOTH ARRY SORTED 
 
 public class Merge_twosorted_array {
 	static void merge(int arr1[],int arr2[]){
