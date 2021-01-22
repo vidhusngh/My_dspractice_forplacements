@@ -1,4 +1,4 @@
-
+//Palindrome is if a string reversed gives the same string
 public class palindrome_check {
  public static void main(String args[]) {
 	 String str="abccbav";
