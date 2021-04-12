@@ -1,6 +1,7 @@
 import java.util.*;
 
 //hashset is used to store a set of keys
+//It implements set interface
 //hashset methods- add(),remove(),contains(),isEmpty(),hasNext(),size(),clear()
 //add(), remove(),contains(),size(),clear() all take O(1)
 public class hashset {
