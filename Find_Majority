@@ -1,0 +1,38 @@
+//Print majoritynumbers of number whose count is greater by n/3
+public class Find_Majority {
+	public static void majority(int[] arr) {
+	int firstmaj=arr[0],firstcount=1;
+	int secmaj=0,seccount=0;
+	for(int i=0;i<arr.length;i++) {
+		
+		if(arr[i]==firstmaj) {
+				firstcount++;}
+
+		else if(arr[i]==secmaj){seccount++;}
+		else if(seccount==0) {
+			secmaj=arr[i];
+			seccount++;
+		}
+	else if(firstcount==0) {
+		firstmaj=arr[i];
+		firstcount++;
+		}
+		
+		else {
+			seccount--;firstcount--;
+		}
+	}
+	int c=arr.length/3,c1=0,c2=0;
+	for(int i=0;i<arr.length;i++) {
+		if(arr[i]==firstmaj) {c1++;}
+		if(arr[i]==secmaj) {c2++;}
+	}
+	if(c1>c) {System.out.print(firstmaj);}
+	if(c2>c) {System.out.print(secmaj);}
+	}
+public static void main(String[] arg) {
+	int[] arr= {1,2,2,6,1,1,2,2,1};
+	majority(arr);
+	
+}
+}
